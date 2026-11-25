@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forneria São Bento | Pizzaria artesanal de bairro</title>
+<meta name="description" content="Pizzas artesanais de fermentação lenta, assadas em forno a lenha. Peça pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+
+<!-- Estilos (BLOCO 2) -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="topo">
+  <div class="wrap">
+    <a class="logo" href="#inicio">Forneria São Bento</a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#como-pedir">Como pedir?</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#diferenciais">Nossa massa</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <p class="status" id="status" role="status">Verificando horário…</p>
+    <button class="carrinho-btn" id="abrir" type="button" aria-controls="gaveta" aria-expanded="false">
+      Pedido <b id="contador">0</b>
+    </button>
+  </div>
+  <p class="aviso-status" id="status-mobile" aria-hidden="true"></p>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-labelledby="t-hero">
+    <div class="wrap">
+      <div>
+        <h1 id="t-hero">Pizza de forno de verdade, entrega rápida.</h1>
+        <p class="sub">Massa com 48 horas de fermentação, molho feito aqui todo dia e borda alta assada em forno a lenha. Escolha, monte seu pedido e envie pelo WhatsApp.</p>
+        <div class="acoes">
+          <a class="btn btn-ouro" href="#cardapio">Ver cardápio</a>
+          <a class="btn btn-azul" href="#como-pedir">Como pedir</a>
+        </div>
+        <ul class="numeros">
+          <li><strong>48 h</strong><span>de fermentação</span></li>
+          <li><strong>12</strong><span>sabores artesanais</span></li>
+          <li><strong>25–40 min</strong><span>para entregar</span></li>
+        </ul>
+      </div>
+      <div class="forno-arte" role="img" aria-label="Ilustração de uma pizza com muçarela, azeitonas e tomate"></div>
+    </div>
+  </section>
+
+  <section id="como-pedir" aria-labelledby="t-como">
+    <div class="wrap">
+      <h2 id="t-como">Pedir é rápido</h2>
+      <p class="sub">Sem aplicativo e sem cadastro. Você fala direto com a gente.</p>
+      <ol class="passos">
+        <li><h3>Escolha</h3><p>Navegue pelo cardápio, filtre por categoria ou busque por ingrediente.</p></li>
+        <li><h3>Monte o pedido</h3><p>Defina tamanho e quantidade, informe nome e endereço e veja o total.</p></li>
+        <li><h3>Envie no WhatsApp</h3><p>O pedido vai pronto na conversa. Confirmamos o tempo de entrega na hora.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cardapio" id="cardapio" aria-labelledby="t-card">
+    <div class="wrap">
+      <h2 id="t-card">Cardápio</h2>
+      <p class="sub">Broto serve 1 pessoa, média 2, grande 3 ou 4 e tamanho família serve entre 6 à 7 pessoas.</p>
+      <div class="ferramentas">
+        <div class="busca">
+          <label class="sr" for="busca">Buscar por nome ou ingrediente</label>
+          <input id="busca" type="search" placeholder="Buscar por nome ou ingrediente" autocomplete="off">
+        </div>
+        <div class="abas" id="abas" role="group" aria-label="Categorias"></div>
+      </div>
+      <div class="lista" id="lista" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="diferenciais" aria-labelledby="t-dif">
+    <div class="wrap">
+      <h2 id="t-dif">O que muda na nossa pizza</h2>
+      <div class="difs">
+        <article class="dif"><h3>Massa de 48 horas</h3><p>Fermentação lenta deixa a massa leve, aerada e fácil de digerir, com borda crocante por fora e macia por dentro.</p></article>
+        <article class="dif"><h3>Forno a lenha</h3><p>Assamos em alta temperatura por poucos minutos. O resultado é a borda dourada e o queijo no ponto.</p></article>
+        <article class="dif"><h3>Ingredientes do bairro</h3><p>Hortifrúti e laticínios de fornecedores próximos, e linguiça de fumeiro feita por produtor da região.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="depo" aria-labelledby="t-depo">
+    <div class="wrap">
+      <h2 id="t-depo">Quem já pediu</h2>
+      <div class="cits">
+        <blockquote class="cit"><p>A borda é a melhor que já comi. Chegou quente e dentro do prazo.</p><footer>Mariana, vizinha da Rua das Flores</footer></blockquote>
+        <blockquote class="cit"><p>A São Bento virou pedido fixo de sexta aqui em casa.</p><footer>Carlos, cliente desde a inauguração</footer></blockquote>
+        <blockquote class="cit"><p>A de burrata com pesto é uma delícia, e o atendimento pelo WhatsApp é bem ágil.</p><footer>Paula, pedido para 4 pessoas</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas" aria-labelledby="t-faq">
+    <div class="wrap">
+      <h2 id="t-faq">Dúvidas frequentes</h2>
+      <div class="faq">
+        <details><summary>Quais bairros vocês atendem?</summary><p>Atendemos o bairro e as regiões vizinhas num raio de cerca de 5 km. Informe o endereço no pedido e confirmamos a entrega.</p></details>
+        <details><summary>Qual é a taxa de entrega?</summary><p>A taxa fixa é de R$ 6,00 e já aparece no total do pedido. Para retirada no balcão não há taxa.</p></details>
+        <details><summary>Quais formas de pagamento?</summary><p>Pix, cartão de crédito ou débito na entrega e dinheiro. Para dinheiro, avise no campo de observações se precisa de troco.</p></details>
+        <details><summary>Posso pedir metade de dois sabores?</summary><p>Pode. Escreva nas observações os dois sabores e o tamanho, e o valor será o do sabor mais caro.</p></details>
+        <details><summary>Tem opção para alergias ou restrições?</summary><p>Informe nas observações. Como o forno é compartilhado, não garantimos ausência total de traços de glúten ou lactose.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato" aria-labelledby="t-contato">
+    <div class="wrap">
+      <h2 id="t-contato">Horários e contato</h2>
+      <div class="grid">
+        <table class="horarios">
+          <caption class="sr">Horário de funcionamento</caption>
+          <thead><tr><th scope="col">Dia</th><th scope="col">Funcionamento</th></tr></thead>
+          <tbody id="horarios"></tbody>
+        </table>
+        <div class="cartao-info">
+          <h3>Onde estamos</h3>
+          <p>Rua São Bento, 123 (ajuste para o endereço real)<br>Bauru, SP</p>
+          <p>WhatsApp: (14) 99999-9999</p>
+          <div class="acoes"><a class="btn btn-ouro" id="link-zap" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape"><p>© <span id="ano"></span> Forneria São Bento | Allyson Rodolfo da Silva. Pizzaria artesanal de bairro.</p></footer>
+
+<!-- Gaveta do pedido + checkout -->
+<div class="fundo" id="fundo"></div>
+<aside class="gaveta" id="gaveta" role="dialog" aria-modal="true" aria-labelledby="t-gaveta">
+  <header><h2 id="t-gaveta">Seu pedido</h2><button class="fechar" id="fechar" type="button" aria-label="Fechar pedido">✕</button></header>
+  <div class="corpo">
+    <ul class="itens" id="itens"></ul>
+    <form id="form" novalidate>
+      <label class="campo" id="c-nome">Nome<input id="nome" autocomplete="name" placeholder="Como podemos te chamar?"><span class="msg-erro" aria-live="polite"></span></label>
+      <fieldset class="tipo"><legend class="sr">Entrega ou retirada</legend>
+        <label><input type="radio" name="tipo" value="entrega" checked><span>Entrega</span></label>
+        <label><input type="radio" name="tipo" value="retirada"><span>Retirada</span></label>
+      </fieldset>
+      <label class="campo" id="c-end">Endereço de entrega<input id="endereco" autocomplete="street-address" placeholder="Rua, número, bairro"><span class="msg-erro" aria-live="polite"></span></label>
+      <label class="campo">Pagamento<select id="pagamento"><option>Pix</option><option>Cartão na entrega</option><option>Dinheiro</option></select></label>
+      <label class="campo">Observações<textarea id="obs" rows="2" placeholder="Ex.: sem cebola, troco para R$ 100"></textarea></label>
+    </form>
+  </div>
+  <div class="rodape-gaveta">
+    <div class="linha"><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
+    <div class="linha"><span>Entrega</span><span id="taxa">R$ 0,00</span></div>
+    <div class="linha total"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+    <button class="btn" id="enviar" type="button" disabled>Enviar pedido pelo WhatsApp</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<!-- Lógica do site (BLOCO 3) -->
+<script src="script.js" defer></script>
+</body>
+</html>
